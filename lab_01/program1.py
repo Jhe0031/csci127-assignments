@@ -50,3 +50,21 @@ def first_half(str):
 print (first_half('WooHoo'))
 print (first_half('HelloThere'))
 print (first_half('abcdef'))
+
+def without_end(str):
+  return str[1:-1]
+print (without_end('Hello'))
+print (without_end('java'))
+print (without_end('coding'))
+
+#String-1 > combo_string IN PROGRESS
+#def combo_string(a, b):
+#  a = str(a)
+#  b = str(b)
+#  a_len = len(a)
+#  b_len = len(b)
+#  if a_len > b_len:
+#    return a + b + a
+#  else:
+#    return b + a + b
+
