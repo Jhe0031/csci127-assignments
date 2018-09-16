@@ -47,14 +47,24 @@ print(part_pig_latin("testing"))
 
 # Part 4
 def make_out_word(out, word):
-  return out[:2] + word + out[2:]
+    """
+    Given an "out" string length 4, such as "<<>>", and a word, return a new
+    string where the word is in the middle of the out string, e.g. "<<word>>".
+    """
+    return out[:2] + word + out[2:]
 print (make_out_word('<<>>', 'Yay'))
 print (make_out_word('<<>>', 'WooHoo'))
 print (make_out_word('[[]]', 'word'))
 
 # Part 5
 def make_tags(tag, word):
-  return "<" +  tag + ">" + word + "</" + tag + ">"
+    """ 
+    The web is built with HTML strings like "<i>Yay</i>" which draws Yay as
+    italic text. In this example, the "i" tag makes <i> and </i> which surround
+    the word "Yay". Given tag and word strings, create the HTML string with tags
+    around the word, e.g. "<i>Yay</i>".
+    """
+    return "<" +  tag + ">" + word + "</" + tag + ">"
 print (make_tags('i', 'Yay'))
 print (make_tags('i', 'Hello'))
 print (make_tags('cite', 'Yay'))
