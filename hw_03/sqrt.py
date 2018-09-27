@@ -5,7 +5,7 @@ def mysqrt(i):
     while guess*guess != i:
         oldGuess = guess
         guess = (guess + (i/guess))/2
-        if round(oldGuess, 4) == round(guess, 4):
+        if round(oldGuess, 5) == round(guess, 5):
             break
     return round(guess, 5)
 
