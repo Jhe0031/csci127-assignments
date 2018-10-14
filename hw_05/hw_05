@@ -1,0 +1,52 @@
+import random
+
+def build_random_list(size, max_value):
+    """
+    Parameters:
+      size : the number of elements in the lsit
+      max_value : the max random value to put in the list
+    """
+    l = []
+    i = 0
+    while i < size:
+        l.append(random.randrange(0,max_value))
+        i = i + 1
+    return l
+l = build_random_list(10, 20)
+print('l:', l)
+
+def filterodd(l):
+    """
+    Write a function filterodd(l) that takes in a list and returns a new
+    list that consists of only the odd numbers from the original list. That
+    is the list [1,2,3,4,5,6,7,8] would return a new list [1,3,5,7]. The
+    lists don't have to be in order.
+    """
+    i = 0
+    odd_l = []
+    while i < len(l):
+        mod = l[i] % 2
+        value = l[i]
+        if mod != 0:
+            odd_l.append(value)
+            i += 1
+        elif mod == 0:
+            i += 1
+    return odd_l
+print("Odd:", filterodd(l))
+
+def mapsquare(l):
+    """
+    Write a function mapsquare(l) that takes a list and returns a new
+    list that consists of the original items squared. For example, the list
+    [4,2,5,3,5] would return a new list [16,4,25,15,25]
+    """
+    i = 0
+    square_l = []
+    while i < len(l):
+        value = l[i]
+        sq = value*value
+        square_l.append(sq)
+        i += 1
+    return square_l
+print("Squared:", mapsquare(l))
