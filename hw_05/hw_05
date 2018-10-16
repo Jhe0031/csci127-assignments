@@ -50,3 +50,37 @@ def mapsquare(l):
         i += 1
     return square_l
 print("Squared:", mapsquare(l))
+
+def filter_odd(l):
+    result = []
+    for item in l:
+        if item % 2 != 0:
+            result.append(item)
+    return result
+print("FiltOdd:", filter_odd(l))
+
+def mapsq(l):
+    result = []
+    for item in l:
+        result.append(item*item)
+    return result
+print("MapSquared:", mapsq(l))
+
+def is_odd(n):
+    return n%2 == 1
+
+def is_even(n):
+    retun n%2 == 0
+    
+def is_big(n):
+    return n>5
+
+def is_upper(word):
+    return word[0] == word[0].upper()
+
+def myfilter(predicate, l):
+    result = []
+    for item in l:
+        if predicate(item):
+            result.append(item)
+    return result
