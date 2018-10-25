@@ -2,7 +2,7 @@ def compress_word(w):
     """
     Return a new string that's formed by first taking the first letter of w and then removing the vowels from the rest of w.
     """
-    w = w.lower()
+    #w = w.lower()
     vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
     new = []
     i = 0
@@ -22,3 +22,16 @@ def sentence(line):
     return line
 print(sentence("I like to eat apple pie"))
 print(sentence("Who is there"))
+
+def for_compress(w):
+##    w = w.lower()
+    vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+    new = []
+    for letter in w:
+        if letter == w[0]:
+            new.append(letter)
+        elif letter not in vowels:
+            new.append(letter)
+    return ''.join(new)
+print(for_compress("testing"))
+print(for_compress("TESTING"))

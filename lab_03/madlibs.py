@@ -39,3 +39,5 @@ def madlibs(s):
             mad_story.append(item)
     return ' '.join(mad_story)
 print(madlibs(story))
+
+
