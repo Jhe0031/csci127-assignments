@@ -29,3 +29,5 @@ def freq(l, number):
             count += 1
     return count
 print('Frequency of 10:', freq(l, 10))
+print('Frequency of 5:', freq(l, 5))
+print('Frequency of 3:', freq(l, 3))
