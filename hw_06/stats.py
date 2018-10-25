@@ -11,11 +11,21 @@ def build_random_list(items, max_value):
         l.append(random.randint(0, max_value))
         l = l + [random.randint(0, max_value)]
     return l
-print(build_random_list(100, 10))
+l = build_random_list(100, 10)
+print(l)
 
 def max(l):
     largest = 0
     for item in l:
         if item > largest:
             largest = item
-        return 
+    return largest
+print('Largest Number:', max(l))
+
+def freq(l, number):
+    count = 0
+    for item in l:
+        if item == number:
+            count += 1
+    return count
+print('Frequency of 10:', freq(l, 10))
