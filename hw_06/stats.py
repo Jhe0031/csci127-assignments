@@ -42,8 +42,9 @@ print('Frequency of 1:', freq(l, 1))
 def mode(l):
     most = 0
     for number in l:
-        if freq(l, number) > most:
+        if freq(l, number) >= most:
             most = freq(l, number)
             a_mode = number
-    return a_mode
+    return a_modeca
 print('Mode:', mode(l))
+
