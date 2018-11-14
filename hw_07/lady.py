@@ -46,8 +46,7 @@ def happyLadybugs(b):
                 elif count[letter] >= 2:
                     continue
         return "YES"
-print(happyLadybugs("RBY_YBR"))
-print(happyLadybugs("X_Y__X"))
-print(happyLadybugs("B_RRBR"))
-print(happyLadybugs("BBRRXX"))
-print(happyLadybugs("BRBRXX"))
+    
+cases = ["RBY_YBR", "X_Y__X", "B_RRBR", "BBRRXX", "BRBRXX"]
+for test in cases:
+    print(happyLadybugs(test))
