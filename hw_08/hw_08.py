@@ -65,6 +65,7 @@ word_after = {}
 cleaned = words_cleanagain.split()
 key_words = key_words
 print("\nCOMMON WORDS:",key_words)
+
 for i in range(1,len(cleaned)-1):
     if cleaned[i] in key_words:
         element = cleaned[i]
