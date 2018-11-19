@@ -20,6 +20,4 @@ print(encode("cbbbbbdee"))
 
 ##Not complete
 ##new_s = []
-##def decode(d):
-##    for letter in d:
-##        d[letter] = 
+##def decode():
