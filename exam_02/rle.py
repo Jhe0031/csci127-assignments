@@ -1,10 +1,9 @@
 def encode(s):
-    #Not complete
     list = []
     count = 0
     i = 0
-    while i < len(s)-1:
-        if i == len(s)-2:
+    while i <= len(s)-1:
+        if i == len(s)-1:
             count += 1
             list.append('[' + s[i] + ', ' + str(count) + ']')
         elif s[i] == s[i+1]:
