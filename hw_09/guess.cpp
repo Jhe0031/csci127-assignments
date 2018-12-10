@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+#include <cstdlib>
 
 int main()
 {
@@ -30,7 +31,7 @@ int main()
 			g = g+1;
 			std::cin >> num;
 		} else {
-			std::cout << "So you want to stop using 1's and 0's.\n";
+			std::cout << "So you want to stop using 1's I see.\n";
 			g = g+num;
 			std::cout << "Is this your number: " << g << "?\n";
 			std::cin >> num;
@@ -40,4 +41,5 @@ int main()
 	{
 		std::cout << "Your number is " << g << ". Yay!\n";
 	}
+	return 0;
 }
