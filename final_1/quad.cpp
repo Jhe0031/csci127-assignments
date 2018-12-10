@@ -13,7 +13,15 @@ int quadsolve(int a, int b, int c) {
 	dis = discriminant(a, b, c);
 	double total;
 	if (dis >= 0) {
-		total = (-b + (sqrt(dis)))/(2*a);
+		double sqr = sqrt(dis);
+		// std::cout << "sqrt(dis): " << sqr << "\n";
+		double bottom = 2*a;
+		// std::cout << "2*a: " << bottom << "\n";
+		b = b*(-1);
+		// std::cout << "-b: " << b << "\n";
+		double top = (b+sqr);
+		// std::cout << "top: " << top << "\n";
+		total = top / bottom;
 		std::cout << "Quadtratic Formula: " << total << "\n";
 	} else if (dis < 0) {
 		total = 0;
@@ -23,9 +31,9 @@ int quadsolve(int a, int b, int c) {
 
 int main() {
 	srand(time(NULL));
-	int x = rand()%25;
-	int y = rand()%50;
-	int z = rand()%30;
+	int x = rand()%10;
+	int y = rand()%30;
+	int z = rand()%20;
 	std::cout << "a=" << x << ", b=" << y << ", c=" << z << "\n";
 	int disc = discriminant(x, y, z);
 	std::cout << "Discriminant: " << disc << "\n";
